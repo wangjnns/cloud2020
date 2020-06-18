@@ -1,11 +1,12 @@
-package com.wang.springcloud.controller;
+package springcloud.controller;
 
 
-import com.wang.springcloud.service.PaymentService;
+
 import entities.CommonResult;
 import entities.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
+import springcloud.service.PaymentService;
 
 import javax.annotation.Resource;
 

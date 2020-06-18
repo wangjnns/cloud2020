@@ -1,9 +1,8 @@
-package com.wang.springcloud.entities;
+package entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.ibatis.type.Alias;
 
 import java.io.Serializable;
 
@@ -14,7 +13,6 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Alias(value = "Payment")
 public class Payment implements Serializable {
     private Long id;
     private String serial;

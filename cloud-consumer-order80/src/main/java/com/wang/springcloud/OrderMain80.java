@@ -6,12 +6,12 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Author 王晋南
- * @Date 2020/6/16 0016
+ * @CreateDate 2020/6/17 0017
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class PaymentMain8001 {
+public class OrderMain80 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class,args);
+        SpringApplication.run(OrderMain80.class,args);
     }
 }

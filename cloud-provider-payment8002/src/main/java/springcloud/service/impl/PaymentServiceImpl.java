@@ -1,9 +1,10 @@
-package com.wang.springcloud.service.impl;
+package springcloud.service.impl;
 
-import com.wang.springcloud.dao.PaymentDao;
-import com.wang.springcloud.service.PaymentService;
+
 import entities.Payment;
 import org.springframework.stereotype.Service;
+import springcloud.dao.PaymentDao;
+import springcloud.service.PaymentService;
 
 import javax.annotation.Resource;
 
