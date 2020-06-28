@@ -5,20 +5,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
+
 /**
  * @Author 王晋南
- * @Date 2020/06/22 13:57
+ * @Date 2020/06/28 10:06
  */
 @RestController
 @Slf4j
-public class OrderZKController {
-    public static final String INVOKE_URL = "http;//cloud-provider-payment";
+public class OrderConsulController {
+    public static final String INVOKE_URL = "http;//consul-provider-payment";
 
+    @Resource
     private RestTemplate restTemplate;
 
-    @GetMapping("/consumer/payment/zk")
+    @GetMapping("/consumer/payment/consul")
     public String paymentInfo(){
-        String result = restTemplate.getForObject(INVOKE_URL+"/payment/zk",String.class );
+        String result = restTemplate.getForObject(INVOKE_URL+"/payment/consul",String.class );
         return result;
     }
 }
